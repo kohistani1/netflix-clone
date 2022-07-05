@@ -1,0 +1,39 @@
+.header {
+  background-color: rgb(25, 25, 25);
+  color: darken(#fff, 5%);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  height: 8rem;
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    min-width: 58%;
+    &--logo {
+      height: inherit;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &--nav {
+      align-self: center;
+      font-size: 2rem;
+
+      a {
+        text-decoration: none;
+        margin-left: 4vmax;
+      }
+    }
+  }
+  &__search {
+    margin-right: 2rem;
+    align-self: center;
+    cursor: pointer;
+    &:hover svg {
+      color: darken(#fff, 20%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+$bg-color: #222;
+$bg-backdrop: rgba(0, 0, 0, 0.4);
+$color-font-main: #fff;
+$color-font-secondary: #333;
+
+.hero {
+  height: 30rem;
+  color: $color-font-main;
+  background: url('../../images/hero-bg-large.jpg') no-repeat top / cover;
+  filter: grayscale(60%);
+}
