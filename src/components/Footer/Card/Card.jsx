@@ -1,22 +1,24 @@
 import React from 'react';
 import './card.scss';
-import img from '../../../images/poster.jpg';
 
 const Title = ({ t }) => {
   console.log(t);
+  const ti = [];
+  const titles = [...new Set(ti)];
+  console.log(titles);
+
   return (
     <>
-      <h3 className=''>{t}</h3>
+      <h3>{t}</h3>
     </>
   );
 };
 
-function Card(props) {
-  const { title, imgUrl } = props.data;
-  console.log(props);
+function Card({ title, imgUrl }) {
+  //   console.log(props);
   return (
     <div className='card'>
-      {title && <Title title={title} />}
+      {title && <Title t={title} />}
       <img src={imgUrl} alt='poster' />
     </div>
   );
