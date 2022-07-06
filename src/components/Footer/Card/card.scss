@@ -1,14 +1,27 @@
 .card {
-  width: 23rem;
-  padding-left: 1rem;
+  width: 16rem;
+  padding: 0.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  &:hover img:not(:hover) {
+    transform: scale(0.99);
+  }
 
   img {
     width: 100%;
     height: 100%;
   }
-  h3 {
-    color: #000;
-    font-size: 2.5rem;
-    padding: 0.5rem;
+}
+h4 {
+  color: #fff;
+  padding: 1rem 1rem 0;
+  max-width: fit-content;
+  &:hover {
+    color: darken(#fff, 20%);
+    cursor: pointer;
   }
 }

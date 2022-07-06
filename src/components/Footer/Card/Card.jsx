@@ -1,27 +1,20 @@
 import React from 'react';
 import './card.scss';
 
-const Title = ({ t }) => {
-  console.log(t);
-  const ti = [];
-  const titles = [...new Set(ti)];
-  console.log(titles);
-
+export const Title = ({ title }) => {
+  console.log(title);
   return (
-    <>
-      <h3>{t}</h3>
-    </>
+    <div>
+      <h4>{title}</h4>
+    </div>
   );
 };
 
-function Card({ title, imgUrl }) {
+export function Card({ imgUrl }) {
   //   console.log(props);
   return (
     <div className='card'>
-      {title && <Title t={title} />}
       <img src={imgUrl} alt='poster' />
     </div>
   );
 }
-
-export default Card;

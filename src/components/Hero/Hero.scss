@@ -4,8 +4,31 @@ $color-font-main: #fff;
 $color-font-secondary: #333;
 
 .hero {
-  height: 30rem;
+  &__content--left {
+    max-width: 35%;
+    padding-left: 2rem;
+    h1 {
+      padding: 2rem 0 1rem;
+      font-size: 5rem;
+    }
+    p {
+      max-width: 80%;
+      text-align: left;
+      margin: 0.5rem 0;
+      line-height: 1.4;
+      letter-spacing: 2px;
+    }
+    button {
+      margin: 3rem 1rem 0 0;
+    }
+  }
+
+  height: 32rem;
   color: $color-font-main;
-  background: url('../../images/hero-bg-large.jpg') no-repeat top / cover;
-  filter: grayscale(60%);
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.08) 40%,
+      rgba(0, 0, 0, 0.69) 70%
+    ),
+    url('../../images/hero-bg-large.jpg') no-repeat top / cover;
 }

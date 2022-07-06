@@ -1,11 +1,14 @@
 import React from 'react';
-import CardList from './Card List/CardList';
+import Row from './Card List/CardList';
+import url from '../../images/poster.jpg';
 import './footer.scss';
 
 function Footer() {
+  const arr = [url, url, url, url, url, url, url, url];
   return (
     <div>
-      <CardList />
+      <Row title={'popualar hits'} imgUrls={arr} />
+      <Row title={'Movies'} imgUrls={arr} />
     </div>
   );
 }
