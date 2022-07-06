@@ -1,0 +1,29 @@
+.hero {
+  height: 32rem;
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, color-stop(40%, rgba(0, 0, 0, 0.08)), color-stop(70%, rgba(0, 0, 0, 0.69))), url("../../images/hero-bg-large.jpg") no-repeat top/cover;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.08) 40%, rgba(0, 0, 0, 0.69) 70%), url("../../images/hero-bg-large.jpg") no-repeat top/cover;
+}
+
+.hero__content--left {
+  max-width: 35%;
+  padding-left: 2rem;
+}
+
+.hero__content--left h1 {
+  padding: 2rem 0 1rem;
+  font-size: 5rem;
+}
+
+.hero__content--left p {
+  max-width: 80%;
+  text-align: left;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.hero__content--left button {
+  margin: 3rem 1rem 0 0;
+}
+/*# sourceMappingURL=Hero.css.map */

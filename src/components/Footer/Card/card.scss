@@ -1,19 +1,24 @@
+@import url('../../_variables.scss');
+
 .card {
+  // border: 1px solid $color-font-main;
   width: 16rem;
-  padding: 0.5rem;
+
+  overflow: hidden;
   transition: all 0.2s ease;
 
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
-  &:hover img:not(:hover) {
-    transform: scale(0.99);
-  }
+  // &:hover img:not(:hover) {
+  //   transform: scale(0.99);
+  // }
 
   img {
     width: 100%;
     height: 100%;
+    padding: 0.5rem;
   }
 }
 h4 {

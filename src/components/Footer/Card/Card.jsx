@@ -2,7 +2,6 @@ import React from 'react';
 import './card.scss';
 
 export const Title = ({ title }) => {
-  console.log(title);
   return (
     <div>
       <h4>{title}</h4>
