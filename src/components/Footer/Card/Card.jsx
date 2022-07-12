@@ -10,10 +10,13 @@ export const Title = ({ title }) => {
 };
 
 export function Card({ imgUrl }) {
-  //   console.log(props);
+  const baseUrl = 'https://image.tmdb.org/t/p/original/';
+  const handleClick = (e) => {
+    console.log(e.target.src);
+  };
   return (
     <div className='card'>
-      <img src={imgUrl} alt='poster' />
+      <img onClick={handleClick} src={`${baseUrl}${imgUrl}`} alt='poster' />
     </div>
   );
 }

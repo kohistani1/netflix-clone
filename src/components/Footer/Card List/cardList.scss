@@ -5,6 +5,7 @@
   &__flex {
     display: flex;
     align-content: center;
-    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
