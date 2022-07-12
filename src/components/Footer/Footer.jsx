@@ -16,10 +16,10 @@ function Footer() {
         const {
           data: { results }, //first geting data, this data has a key results getting it by destructuring
         } = await axios.get(`${url}/${cat}?api_key=${key}`);
-        console.log();
+
         setFun(results);
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
     getData('popular', setPopulars); //gettings data with catagory (catagory, setCatagory)
@@ -27,7 +27,7 @@ function Footer() {
     getData('top_rated', setTopRated);
   }, []);
 
-  console.log(upcomings);
+  // console.log(upcomings);
   return (
     <div>
       <Row title={'Upcomings'} catagory={upcomings} />

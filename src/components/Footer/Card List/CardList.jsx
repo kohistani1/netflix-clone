@@ -8,12 +8,7 @@ function Row({ title, catagory }) {
       <Title title={title} />
       <div className='card-list__flex'>
         {catagory.map((item) => {
-          return (
-            <Card
-              key={new Date().now().slice(0, 10)}
-              imgUrl={item.poster_path}
-            />
-          );
+          return <Card key={Math.random()} imgUrl={item.poster_path} />;
         })}
       </div>
     </div>
